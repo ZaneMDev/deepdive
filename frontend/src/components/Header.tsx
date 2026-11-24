@@ -1,16 +1,17 @@
+import { Link } from 'react-router';
 import logo from '../assets/logo.svg';
 
 function Header() {
     return (
         <header className="bg-surface-1 fixed right-0 left-0 z-1 flex justify-between px-16 py-2 shadow-lg">
             <div className="flex w-1/4 items-center">
-                <a href="#" className="block size-fit" title="Home">
+                <Link to="/" className="block size-fit" title="Home">
                     <img
                         src={logo}
                         alt="Logo"
                         className="pointer-events-none h-10"
                     />
-                </a>
+                </Link>
             </div>
 
             <form action="" className="relative flex w-1/2 items-center">
@@ -31,13 +32,13 @@ function Header() {
             </form>
 
             <div className="flex w-1/4 items-center justify-end gap-2">
-                <a
-                    href=""
+                <Link
+                    to="/login"
                     className="border-foreground-2 text-foreground-2 bg-surface-1 rounded-full border px-4 py-2"
                     title="Log In"
                 >
                     Log In
-                </a>
+                </Link>
                 <a
                     href=""
                     className="bg-brand-primary rounded-full px-4 py-2 text-white"
