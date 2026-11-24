@@ -2,7 +2,7 @@ import logo from '../assets/logo.svg';
 
 function Header() {
     return (
-        <header className="bg-surface-1 fixed right-0 left-0 z-1 flex justify-between px-16 py-2 shadow-md">
+        <header className="bg-surface-1 fixed right-0 left-0 z-1 flex justify-between px-16 py-2 shadow-lg">
             <div className="flex w-1/4 items-center">
                 <a href="#" className="block size-fit" title="Home">
                     <img
@@ -25,7 +25,7 @@ function Header() {
                 <input
                     type="text"
                     id="search"
-                    className="border-foreground-2 bg-surface-1 text-foreground-2 placeholder:text-foreground-2 w-full rounded-full border px-12 py-2 focus:outline-none"
+                    className="border-foreground-2 focus:border-foreground-1 bg-surface-1 text-foreground-2 placeholder:text-foreground-3 w-full rounded-full border px-12 py-2 focus:outline-none"
                     placeholder="Search for a group..."
                 />
             </form>
@@ -40,7 +40,7 @@ function Header() {
                 </a>
                 <a
                     href=""
-                    className="bg-brand-secondary text-static-light-1 rounded-full px-4 py-2"
+                    className="bg-brand-primary rounded-full px-4 py-2 text-white"
                     title="Sign Up"
                 >
                     Sign Up
