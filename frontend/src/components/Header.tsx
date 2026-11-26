@@ -35,17 +35,17 @@ function Header() {
                 <Link
                     to="/login"
                     className="border-foreground-2 text-foreground-2 bg-surface-1 rounded-full border px-4 py-2"
-                    title="Log In"
+                    title="Login"
                 >
-                    Log In
+                    Login
                 </Link>
-                <a
-                    href=""
+                <Link
+                    to="/signup"
                     className="bg-brand-primary rounded-full px-4 py-2 text-white"
                     title="Sign Up"
                 >
                     Sign Up
-                </a>
+                </Link>
             </div>
         </header>
     );

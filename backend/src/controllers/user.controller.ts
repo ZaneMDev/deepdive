@@ -7,15 +7,13 @@ export async function getUser(req: Request, res: Response) {
 
     const foundUser = await prisma.user.findUnique({
         where: { username },
-        omit: { id: true },
+        omit: { id: true, password: true, email: true, updatedAt: true },
     });
 
     if (!foundUser) {
-        return res
-            .status(404)
-            .send(
-                `404 Not Found: Could not find a user with the username of "${username}".`,
-            );
+        return res.status(404).json({
+            error: `404 Not Found: Could not find a user with the username of '${username}'`,
+        });
     }
 
     res.json(foundUser);
